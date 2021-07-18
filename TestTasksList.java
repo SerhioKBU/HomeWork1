@@ -1,13 +1,9 @@
 package com.serhio.java.homeworks.homework1;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TestTasksList {
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
-    private static ArrayList<String> currentList = new ArrayList<String>();
-
+    
     public static void main(String[] args) {
         InventList list = new InventList();
 
@@ -20,11 +16,13 @@ public class TestTasksList {
                     break;
                 case 2:
                     list.addTask();
-//                case 3:
-//                    doneTasks();
-//                    break;
-//                case 4:
-//                    unDoneTasks();
+                    break;
+                case 3:
+                    list.pickDoneTask();
+                    break;
+                case 4:
+                    list.showDoneTasksList();
+                  break;
                     break;
                 case 0:
                     break;

@@ -4,7 +4,6 @@ public interface TasksList {
     public int menu();
     public void showList();
     public void addTask();
-//    public void showUndoneTasksList();
-//    public void showDoneTasksList();
+    public void showDoneTasksList();
     public void pickDoneTask();
 }
